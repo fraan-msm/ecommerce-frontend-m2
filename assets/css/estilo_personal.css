@@ -1,0 +1,40 @@
+#navbar{
+    background-color: rgb(244, 155, 23);
+    min-height: 56px;
+}
+
+.header-principal {
+  padding: 1.5rem 0;
+  background-color: rgb(245, 209, 143);
+}
+
+.header-logo {
+  max-width: 220px;
+  margin: 0 auto;
+  display: block;
+}
+
+hr{
+  margin-top: 0;
+}
+
+
+.btn-custom-pan{
+    background-color: rgb(255, 153,0);
+    color: antiquewhite;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 20px;
+  z-index: 1000;
+}
+
+
+
+

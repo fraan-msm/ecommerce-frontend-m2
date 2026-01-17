@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horno de la Pan</title>
+
+    <!--Bootstrap css - estilo de elementos-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!--Bootstrap JS - lógica de elementos-->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--JS-->
+    <script defer src="./assets/js/script.js"></script>
+
+    <!--Hoja de estilo personalizada-->
+    <link rel="stylesheet" href="./assets/css/estilo_personal.css" />
+  </head>
+
+  <script>
+    function mostrarContacto() {
+      const alerta = document.getElementById("contactoAlert");
+      alerta.classList.toggle("d-none");
+    }
+  </script>
+
+  <body>
+    <!--Inicio barra de navegación-->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">El Hornito de la Pan</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                Inicio
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#productos"> Productos </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="mostrarContacto()"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Fin barra de navegación-->
+
+    <header class="header-principal">
+      <div class="container text-center">
+        <img
+          src="./assets/img/Logo.png"
+          alt="Logo web"
+          class="img-fluid header-logo"
+        />
+      </div>
+    </header>
+
+    <div class="container mt-3">
+      <div
+        id="contactoAlert"
+        class="alert alert-info text-center d-none"
+        role="alert"
+      >
+        📍Tienda Online, Chile<br />
+        📞 +569 12345678<br />
+        📧 contacto@elhornitodelapan.cl
+      </div>
+    </div>
+
+    <main class="container my-5">
+      <section id="productos" class="py-5">
+        <div class="row justify-content-center gap-3">
+          <div class="col-md-4 col-sm-6">
+            <div class="card h-100">
+              <img
+                src="./assets/img/Chewy-Ginger-Cookie.jpg"
+                class="card-img-top"
+                alt="Galleta jengibre"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Galletas de jengibre</h5>
+                <p class="card-text">
+                  Galletas con un notorio sabor a jengibre, ligeramente
+                  crujientes por los bordes y tiernas en el centro.
+                </p>
+                <a href="producto-detalle.html" class="btn btn-custom-pan">¡Haz tu pedido aquí!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="card h-100">
+              <img
+                src="./assets/img/brownie-vegano-frambuesas.jpg"
+                class="card-img-top"
+                alt="Brownie vegano"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Brownie Vegano</h5>
+                <p class="card-text">
+                  ¿Fan del chocolate? Disfruta de este brownie hecho con cacao
+                  amargo, pero siempre dulce. La mezcla perfecta
+                </p>
+                <a href="producto-detalle.html" class="btn btn-custom-pan">¡Haz tu pedido aquí!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="card h-100">
+              <img
+                src="./assets/img/pan_de_pascua.jpg"
+                class="card-img-top"
+                alt="Pan de Pascua"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pan de Pascua</h5>
+                <p class="card-text">
+                  No tienes que esperar a Navidad para un rico Pan de Pascua.
+                  ¿Lo mejor de todo? Tú eliges qué agregar.
+                </p>
+                <a href="producto-detalle.html" class="btn btn-custom-pan">¡Haz tu pedido aquí!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="card h-100">
+              <img
+                src="./assets/img/galletas-saladas.jpg"
+                class="card-img-top"
+                alt="Galletas saladas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Galletas saladas</h5>
+                <p class="card-text">
+                  Revisa la variedad de galletas saladas que tenemos para ti.
+                  Las especias serán una explosión de sabor en tu boca.
+                </p>
+                <a href="producto-detalle.html" class="btn btn-custom-pan">¡Haz tu pedido aquí!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button
+      id="scrollToTopBtn"
+      class="btn btn-warning shadow"
+      title="Ir arriba"
+    >
+      Ir arriba
+    </button>
+  </body>
+</html>
